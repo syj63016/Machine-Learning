@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 19 14:11:01 2021
-Gussian_Discriminant_analysis
+
+Gussian Discriminant analysis algorithm
+
 @author: Yingjian Song
 """
 import numpy as np
