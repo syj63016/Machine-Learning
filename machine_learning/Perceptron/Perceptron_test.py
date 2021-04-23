@@ -2,7 +2,7 @@
 """
 Created on Mon Apr  5 19:23:22 2021
 
-@author: Administrator
+@author: Yingjian Song
 """
 import numpy as np
 from sklearn import datasets
