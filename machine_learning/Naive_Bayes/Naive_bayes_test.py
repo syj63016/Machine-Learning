@@ -2,7 +2,9 @@
 """
 Created on Fri Apr 23 11:33:50 2021
 
-@author: Administrator
+test for Naive Bayes
+
+@author: Yingjian Song
 """
 
 import pandas as pd
