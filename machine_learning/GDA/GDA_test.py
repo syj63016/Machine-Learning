@@ -2,7 +2,7 @@
 """
 Created on Mon Apr 19 14:45:18 2021
 
-This file is aim to test Gussian Discriminant Analysis algorithm
+This file aim to test Gussian Discriminant Analysis algorithm
 
 @author: Yingjian Song
 """
