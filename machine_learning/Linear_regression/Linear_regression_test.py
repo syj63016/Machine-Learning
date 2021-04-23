@@ -2,7 +2,9 @@
 """
 Created on Sun Apr  4 14:53:10 2021
 
-@author: Administrator
+Linear Regression algorithm test
+
+@author: Yingjian Song
 """
 #import matplotlib.pyplot as plt
 from sklearn import datasets
