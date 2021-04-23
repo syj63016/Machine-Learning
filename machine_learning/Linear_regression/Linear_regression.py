@@ -2,7 +2,9 @@
 """
 Created on Sun Apr  4 13:14:49 2021
 
-@author: Administrator
+Linear Regression algorithm
+
+@author: Yingjian Song
 """
 import numpy as np
 import matplotlib.pyplot as plt
