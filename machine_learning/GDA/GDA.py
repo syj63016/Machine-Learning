@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 19 14:11:01 2021
-
-@author: Administrator
+Gussian_Discriminant_analysis
+@author: Yingjian Song
 """
 import numpy as np
 
