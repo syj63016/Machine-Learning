@@ -2,7 +2,9 @@
 """
 Created on Mon Apr 19 14:45:18 2021
 
-@author: Administrator
+This file is aim to test Gussian Discriminant Analysis algorithm
+
+@author: Yingjian Song
 """
 
 import pandas as pd
