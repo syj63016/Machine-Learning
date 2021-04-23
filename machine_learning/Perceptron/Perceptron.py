@@ -2,7 +2,9 @@
 """
 Created on Mon Apr  5 18:27:08 2021
 
-@author: Administrator
+Perceptron
+
+@author: Yingjian Song
 """
 import numpy as np
 import matplotlib.pyplot as plt
