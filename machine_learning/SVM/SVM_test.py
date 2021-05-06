@@ -2,7 +2,7 @@
 """
 Created on Wed May  5 00:18:08 2021
 
-This code is for testing SVM algorithm
+This code is for testing SVM algorithm(mainly copied from https://github.com/Dod-o/Statistical-Learning-Method_Code)
 
 @author: Yingjian
 """
