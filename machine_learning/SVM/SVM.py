@@ -22,9 +22,9 @@ class SVM(object):
         self.W = np.zeros(self.num_features)
         #initialize Bias
         self.b = 0
-#        self.toler = 0.001
         
     def calcKernel(self, trainDataMat, sigma):
+        #Gaussian kernel Function for training data
         self.trainDataMat = trainDataMat
         self.sigma = sigma
         num_datas = trainDataMat.shape[0]
@@ -40,34 +40,23 @@ class SVM(object):
         return k
     
     def calcSinglKernel(self, x1, x2, sigma):
+        #Gaussian kernel Function for predicting new data
         self.sigma = sigma
         result = np.sum((x1 - x2) * (x1 - x2))
         result = np.exp(-1 * result / (2 * self.sigma ** 2))
-        #返回结果
         return np.exp(result)
     
     def g_x(self, data_id, k, alpha, Y_train, b):
         pred = 0
         for j in range(self.num_datas):
-#            if alpha[j] > 0:
+            if alpha[j] > 0:
                 # calculate predict value of data1
                 pred = pred + alpha[j] * Y_train[j] * k[j][data_id]
         pred = pred + b
         return pred
     
     def isKKT(self, alpha, k, Y_train, b, C, j):
-        
-#        if (math.fabs(self.alpha[j]) < self.toler) and (Y_train[j] * self.g_x(j, k, alpha, Y_train, b) >= 1):
-#            return True
-#        #依据7.113
-#        elif (math.fabs(self.alpha[j] - self.C) < self.toler) and (Y_train[j] * self.g_x(j, k, alpha, Y_train, b) <= 1):
-#            return True
-#        #依据7.112
-#        elif (self.alpha[j] > -self.toler) and (self.alpha[j] < (self.C + self.toler)) \
-#                and (math.fabs(Y_train[j] * self.g_x(j, k, alpha, Y_train, b) - 1) < self.toler):
-#            return True
-#
-#        return False
+        #check if data satisfies KKT
             if (Y_train[j] * self.g_x(j, k, alpha, Y_train, b) > 1) and (alpha[j] == 0):
                 return True
             elif (Y_train[j] * self.g_x(j, k, alpha, Y_train, b) == 1) and (alpha[j] < C) and (alpha[j] > 0):
