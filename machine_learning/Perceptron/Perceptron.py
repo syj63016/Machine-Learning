@@ -38,7 +38,7 @@ class Perceptron(object):
                     # count mis-classification samples
                     cnt = cnt + 1
                     # compute gradient descent
-                    gradient = np.reshape((-result[j] * X_train[j, :].T),(-1,1)) + gradient
+                    gradient = np.reshape((-Y_train[j] * X_train[j, :].T),(-1,1)) + gradient
             if cnt!=0:
                 gradient = gradient / cnt
                 loss_  = loss_/cnt
